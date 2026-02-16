@@ -22,39 +22,77 @@
     <main>
         <section>
             <h2>FC Barcelona - My Favorite Team</h2>
-            <img src="images/barcelona-logo.png" alt="FC Barcelona Logo" width="200">
+            
+            <!-- UNIQUE ELEMENT 1: <figure> and <figcaption> -->
+            <!-- The <figure> element represents self-contained content with an optional caption -->
+            <!-- I'm using it to wrap images with descriptive captions for better semantics -->
+            <!-- UNIQUE ATTRIBUTE 1: loading="lazy" -->
+            <!-- The loading attribute delays image loading until needed, improving page performance -->
+            <!-- I'm using it on all images to speed up initial page load -->
+            <figure>
+                <img src="images/barcelona-logo.png" alt="FC Barcelona Logo" width="200" loading="lazy">
+                <figcaption>The iconic FC Barcelona crest</figcaption>
+            </figure>
+            
             <h3>Why Barcelona?</h3>
+            <!-- UNIQUE ELEMENT 3: <abbr> -->
+            <!-- The <abbr> element defines abbreviations with their full meaning on hover -->
+            <!-- I'm using it to show "Futbol Club" when users hover over FC -->
             <p>As I grew up, watching soccer was also a big thing in my family. As stated before my dad was the first one to introduce me to soccer. As I got older, I started watching international soccer games.
-                One of my family members told me to watch a Spanish team named FC Barcelona. This was during the early 2010s. I sat down one day and started watching a Spanish league game, and the team was FC Barcelona.
+                One of my family members told me to watch a Spanish team named <abbr title="Futbol Club">FC</abbr> Barcelona. This was during the early 2010s. I sat down one day and started watching a Spanish league game, and the team was <abbr title="Futbol Club">FC</abbr> Barcelona.
                 They instantly became my favorite team to watch and since to keep up with. The reason was their play style and a couple of players. Their playstyle was very interesting, it was take the ball, pass the ball.
                 It was called Tiki-Taka. The idea of this playstyle was to make short passes and maintain possession of the ball all the way to the opponent's goal. The players that made it possible during that time were Xavi Hernandez,
                 Iniesta, Sergio Busquets and Lionel Messi. It was an amazing experience to watch these players at their prime. Showing their skills on that pitch every game. Eventually with this play style, they had the ability to conquer European Football.
             </p>
             
             <h3>Favorite Players</h3>
-            <p>FC Barcelona had many incredible players. My favorite players from a while back were Ronaldinho, Suarez, Xavi, Iniesta, and Neymar. These players made me instantly like this team. All of them playing for the badge, giving their 100 percent every match.
+            <p><abbr title="Futbol Club">FC</abbr> Barcelona had many incredible players. My favorite players from a while back were Ronaldinho, Suarez, Xavi, Iniesta, and Neymar. These players made me instantly like this team. All of them playing for the badge, giving their 100 percent every match.
                 The player that was considered the best player in the world played on this team. His name? Lionel Messi. This player always made it fun to watch. Commentators always saying he made the impossible possible in the game. He always has the ability to change the outcome of the game.
                 For that reason, he became one of my favorite players to watch. During the bad seasons of Barcelona, this man carried the team on his shoulders. Until one unforgettable season, where he got kicked out of the team because of financial decisions.
                 Now, during present time, there are many good players on this team. The ones to watch are Pedri, Lamine Yamal, and Raphinha. These players are now part of my favorite soccer players that played for this team. Each time seeing them fight for the team to win.
             </p>
             
+            <!-- UNIQUE ATTRIBUTE 3: open (used with <details> element) -->
+            <!-- The open attribute makes the details element expanded by default -->
+            <!-- I'm using it to show Barcelona's trophy count prominently -->
+            <details open>
+                <summary>Barcelona's Trophy Cabinet</summary>
+                <p>Champions League: 5 titles | La Liga: 27 titles | Copa del Rey: 31 titles</p>
+            </details>
+            
             <h3>Memorable Matches</h3>
-            <p>There are many memorable games of Barcelona. The ones that stood out to me were the Champions League game against PSG and every El Clasico game.
-                The game against PSG was a crazy one. The game was a knockout game which had two legs, an away game and a home game. The first game FC Barcelona lost 4-0. The next game around, and it was a home game for Barcelona. Playing at their home stadium, Camp Nou. Barcelona was down 4-0. They needed a 5-0 win to advance to the next stage of the tournament.
-                The game was do or die. The reason this game is so memorable was because they did the impossible and defeated PSG 6-1. Making history as the greatest comeback in the tournament, and winning the nickname "La Remontada" or The Comeback.
-                The other memorable matches are all the El Clasico or "The Classic" games. It is between FC Barcelona and Real Madrid. Every season there is something new with each El Clasico but, for the last couple of seasons, they have been on top and winning each game. Including championship games against them. These games are always an exciting watch because both teams play with lots of spirit on the field. 
+            <figure>
+                <img src="images/camp-nou.jpg" alt="The Camp Nou stadium" width="600" loading="lazy">
+                <figcaption>Camp Nou - Home of FC Barcelona</figcaption>
+            </figure>
+            
+            <!-- UNIQUE ELEMENT 2: <mark> -->
+            <!-- The <mark> element highlights important text, like using a highlighter -->
+            <!-- I'm using it to emphasize the historic 6-1 comeback score -->
+            <p>There are many memorable games of Barcelona. The ones that stood out to me were the Champions League game against <abbr title="Paris Saint-Germain">PSG</abbr> and every El Clasico game.
+                The game against <abbr title="Paris Saint-Germain">PSG</abbr> was a crazy one. The game was a knockout game which had two legs, an away game and a home game. The first game <abbr title="Futbol Club">FC</abbr> Barcelona lost 4-0. The next game around, and it was a home game for Barcelona. Playing at their home stadium, Camp Nou. Barcelona was down 4-0. They needed a 5-0 win to advance to the next stage of the tournament.
+                The game was do or die. The reason this game is so memorable was because they did the impossible and defeated <abbr title="Paris Saint-Germain">PSG</abbr> <mark>6-1</mark>. Making history as the greatest comeback in the tournament, and winning the nickname "La Remontada" or The Comeback.
+                The other memorable matches are all the El Clasico or "The Classic" games. It is between <abbr title="Futbol Club">FC</abbr> Barcelona and Real Madrid. Every season there is something new with each El Clasico but, for the last couple of seasons, they have been on top and winning each game. Including championship games against them. These games are always an exciting watch because both teams play with lots of spirit on the field. 
                 At the end of the game, their supporters end up with bragging rights until the next game.
             </p>
-             <h3>The Barcelona Style</h3>
-            <p>Fc Barcelona's of play is one of the most influencial in modern soccer because ot prioritizes possession, movement, ansd short percise passing.
-                The team's famous "Tiki-taka" approach emphasizes quick, one-two touches and ball circulation to control the flow of the game  
-                
+            
+            <h3>The Barcelona Style</h3>
+            <figure>
+                <img src="images/la-masia.jpg" alt="La Masia building" width="600" loading="lazy">
+                <figcaption>La Masia - FC Barcelona's youth academy</figcaption>
+            </figure>
+            
+            <p><abbr title="Futbol Club">FC</abbr> Barcelona's style of play is one of the most influential in modern soccer because it prioritizes possession, movement, and short precise passing.
+                The team's famous "Tiki-taka" approach emphasizes quick, one-two touches and ball circulation to control the flow of the game and wear down the opponent's patience.
+                Barcelona's possession-based soccer is not just about keeping the ball, it is about creating space, involving every player into the build up and finding and creating spaces through teamwork.
+                At the core of this playing philosophy is their soccer academy called La Masia or "The Farmhouse", it is Barcelona's youth academy, which trains young players from a young age to think, pass, and move in harmony with this style. 
+                They prioritize technical skills and game intelligence over physicality.
             </p>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 My Soccer Journey</p>
+        <p>My Soccer Journey</p>
     </footer>
 </body>
 </html>

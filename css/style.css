@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.8;
     color: #333;
     background-color: #f4f4f4;
 }
@@ -23,6 +23,7 @@ header {
 header h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 /* Navigation Styling */
@@ -39,12 +40,17 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
 }
 
 nav a:hover {
     background-color: #a50044; /* Barcelona red/garnet */
-    border-radius: 5px;
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: #a50044;
 }
 
 /* Main Content Styling */
@@ -54,30 +60,165 @@ main {
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
+/* Hero Section (for index.html) */
+.hero {
+    background: linear-gradient(135deg, #004d98, #a50044);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin: -20px -20px 30px -20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.hero h2 {
+    color: white;
+    border: none;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.3em;
+    font-style: italic;
+}
+
+/* Headings */
 h2 {
     color: #004d98;
     font-size: 2em;
     margin-bottom: 15px;
     border-bottom: 3px solid #a50044;
     padding-bottom: 10px;
+    font-weight: 700;
 }
 
 h3 {
     color: #a50044;
     font-size: 1.5em;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
+/* Page-Specific Accent Colors */
+.home-page h2 {
+    border-bottom: 3px solid #28a745; /* Green */
+}
+
+.journey-page h2 {
+    border-bottom: 3px solid #ffc107; /* Yellow */
+}
+
+.barcelona-page h2 {
+    border-bottom: 3px solid #a50044; /* Barcelona red */
+}
+
+.worldcup-page h2 {
+    border-bottom: 3px solid #004d98; /* Blue */
+}
+
+/* Paragraphs */
 p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 1.1em;
+}
+
+/* Figure and Figcaption Styling */
+figure {
+    margin: 20px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+figure img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Mark (Highlighted Text) Styling */
+mark {
+    background-color: #ffd700; /* Gold color */
+    color: #000;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Abbreviation Styling */
+abbr {
+    text-decoration: none;
+    border-bottom: 2px dotted #004d98;
+    cursor: help;
+}
+
+abbr:hover {
+    background-color: #e8f4f8;
+}
+
+/* Time Element Styling */
+time {
+    font-weight: bold;
+    color: #a50044;
+}
+
+/* Details and Summary Styling */
+details {
+    background-color: #f0f7ff;
+    border-left: 4px solid #004d98;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+details:hover {
+    background-color: #e8f4f8;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #004d98;
+    font-size: 1.1em;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+summary:hover {
+    color: #a50044;
+}
+
+details ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+details ul li {
+    margin-bottom: 8px;
 }
 
 /* Footer Styling */
@@ -87,4 +228,88 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #004d98;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #a50044;
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    main {
+        padding: 10px;
+        margin: 15px;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+    
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero {
+        padding: 40px 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8em;
+    }
+    
+    .tagline {
+        font-size: 1.1em;
+    }
+    
+    .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    
+    nav a {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
 }
